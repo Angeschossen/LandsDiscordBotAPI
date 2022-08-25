@@ -1,5 +1,6 @@
 package me.angeschossen.landsdiscordbot.api.manager;
 
+import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -45,4 +46,9 @@ public interface Linkmanager {
      */
     @NotNull
     String getUsage();
+
+    /**
+     * @return The plugin that provides this link manager.
+     */
+    @NotNull Plugin getPlugin();
 }
