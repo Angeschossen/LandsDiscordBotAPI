@@ -37,6 +37,7 @@ public interface Linkmanager {
      * Get name of link manager.
      * @return Name of link manager.
      */
+    @Deprecated
     @NotNull
     String getName();
 

@@ -6,7 +6,7 @@
 
     <groupId>com.github.angeschossen</groupId>
     <artifactId>LandsDiscordBotAPI</artifactId>
-    <version>2.5.7</version>
+    <version>2.5.8</version>
     <name>LandsDiscordBotAPI</name>
 
     <repositories>
