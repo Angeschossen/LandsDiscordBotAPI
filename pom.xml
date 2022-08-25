@@ -6,7 +6,7 @@
 
     <groupId>com.github.angeschossen</groupId>
     <artifactId>LandsDiscordBotAPI</artifactId>
-    <version>2.2.4</version>
+    <version>2.5.5</version>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>

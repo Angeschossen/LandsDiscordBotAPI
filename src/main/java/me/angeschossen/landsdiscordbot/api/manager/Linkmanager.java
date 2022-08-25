@@ -11,7 +11,7 @@ public interface Linkmanager {
      * Get Discord id of a minecraft player.
      *
      * @param uuid UID of minecraft player
-     * @return Discord Id. Null if not linked.
+     * @return Discord ID. Null if not linked.
      */
     @Nullable
     String getDiscordId(@NotNull UUID uuid);

@@ -1,29 +1,34 @@
 package me.angeschossen.landsdiscordbot.api;
 
 import me.angeschossen.landsdiscordbot.api.manager.Linkmanager;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
 public class LandsDiscordBotAPI {
-    public static CompletableFuture<Boolean> setLinkManagerAsync(Linkmanager linkManager) {
+
+    @Deprecated
+    public static CompletableFuture<Boolean> setLinkManagerAsync(@NotNull Linkmanager linkManager) {
+        return CompletableFuture.supplyAsync(() -> {
+            setLinkManager(linkManager);
+            return true;
+        });
+    }
+
+    public static @NotNull Linkmanager getLinkManager() {
         return null;
     }
 
-    @Deprecated
-    public static boolean setLinkManager(Linkmanager linkManager) {
-        return true;
+    public static void setLinkManager(@NotNull Linkmanager linkManager) {
     }
 
     public static boolean isCustomLinkManagerSet() {
         return false;
     }
 
-    public static Linkmanager getCurrentLinkManager() {
-        return null;
-    }
-
-    public static CompletableFuture<Void> syncPlayer(UUID uuid) {
+    @NotNull
+    public static CompletableFuture<Void> syncPlayer(@NotNull UUID uuid) {
         return null;
     }
 }
